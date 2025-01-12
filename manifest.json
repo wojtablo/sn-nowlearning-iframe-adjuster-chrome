@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "ServiceNow Learning Portal Iframe Height Adjuster",
+  "version": "1.1",
+  "description": "Adjusts the iframe height on NowLearning for specific course pages.",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://nowlearning.servicenow.com/lxp/en/pages/learning-course*"],
+  "content_scripts": [
+    {
+      "matches": ["https://nowlearning.servicenow.com/lxp/en/pages/learning-course*"],
+      "js": ["content.js"]
+    }
+  ]
+}
